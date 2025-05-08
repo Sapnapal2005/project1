@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Navigation | GGSCOER Nashik</title>
+    <link rel="stylesheet" href="version2.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GGSCOERC Campus Navigation</h1>
+            <div class="subtitle">Guru Gobind Singh College of Engineering and Research Center, Nashik</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search" placeholder="Search for locations...">
+        </div>
+        
+        <div class="locations-grid">
+            <div class="location-card" data-location="library">
+                <div class="location-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3 class="location-name">Library</h3>
+                <p class="location-desc">Academic resources and quiet study spaces</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 10 AM - 5 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="main-hall">
+                <div class="location-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="location-name">Main Hall</h3>
+                <p class="location-desc">Administrative offices and event space</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 9 AM - 5 PM (Mon-Fri)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="cafeteria">
+                <div class="location-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="location-name">Cafeteria</h3>
+                <p class="location-desc">Food and refreshments</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 5 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="engineering-block">
+                <div class="location-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3 class="location-name">Engineering Block</h3>
+                <p class="location-desc">Lecture halls and department offices</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="computer-lab">
+                <div class="location-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="location-name">Computer Lab</h3>
+                <p class="location-desc">Computing facilities and IT resources</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 9 AM - 5 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="auditorium">
+                <div class="location-icon">
+                    <i class="fas fa-theater-masks"></i>
+                </div>
+                <h3 class="location-name">Auditorium</h3>
+                <p class="location-desc">Events, seminars and presentations</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> By appointment
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="sports-complex">
+                <div class="location-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h3 class="location-name">Sports Complex</h3>
+                <p class="location-desc">Indoor and outdoor sports facilities</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 7 AM - 7 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="parking">
+                <div class="location-icon">
+                    <i class="fas fa-parking"></i>
+                </div>
+                <h3 class="location-name">Parking Lot</h3>
+                <p class="location-desc">Vehicle parking area</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 24/7
+                </div>
+            </div>
+            
+            <!-- Department Cards -->
+            <div class="location-card" data-location="civil-dept">
+                <div class="location-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3 class="location-name">Civil Department</h3>
+                <p class="location-desc">Structural and environmental engineering</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="mechanical-dept">
+                <div class="location-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="location-name">Mechanical Department</h3>
+                <p class="location-desc">Machine design and thermal sciences</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="electrical-dept">
+                <div class="location-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="location-name">Electrical Department</h3>
+                <p class="location-desc">Power systems and electronics</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="computer-dept">
+                <div class="location-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <h3 class="location-name">Computer Department</h3>
+                <p class="location-desc">Software and hardware engineering</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="aids-dept">
+                <div class="location-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="location-name">AI & Data Science</h3>
+                <p class="location-desc">Artificial Intelligence and Data Analytics</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <div class="location-card" data-location="ar-dept">
+                <div class="location-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3 class="location-name">Automation & Robotics</h3>
+                <p class="location-desc">Industrial automation and robotics</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 8 AM - 6 PM (Mon-Sat)
+                </div>
+            </div>
+            
+            <!-- New Management Department Card -->
+            <div class="location-card" data-location="management-dept">
+                <div class="location-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="location-name">Management Department</h3>
+                <p class="location-desc">Business administration and management studies</p>
+                <div class="location-hours">
+                    <i class="far fa-clock"></i> 9 AM - 5 PM (Mon-Sat)
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal"  id="locationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-details" id="modalDetails"></div>
+            <div class="modal-features" id="modalFeatures"></div>
+            <div class="map-container"  id="mapContainer">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GGSCOER Campus Navigation System | Designed for Guru Gobind Singh College of Engineering and Research Center, Nashik</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Location data
+        const locations = {
+            "library": {
+                name: "Library",
+                icon: "fas fa-book",
+                description: "The college library spans across the entire 2nd floor of the Academic Block, offering a vast collection of technical and reference books, journals, and digital resources.",
+                details: "The library provides:\n• Over 50,000 books and references\n• Digital library with e-books and online journals\n• Quiet study zones and group discussion areas\n• Photocopy and printing services",
+                hours: "10:00 AM - 5:00 PM (Monday to Saturday)",
+                features: [
+                    "Reading rooms",
+                    "Reference section",
+                    "Newspapers & magazines"
+                ]
+            },
+            "main-hall": {
+                name: "Main Hall",
+                icon: "fas fa-building",
+                description: "The central administrative hub of the college housing the principal's office, administration offices, and the main auditorium for college events.",
+                details: "The Main Hall includes:\n• Principal's office\n• Administrative offices\n• Accounts department\n• Student counseling center\n• 500-seat auditorium",
+                hours: "9:00 AM - 5:00 PM (Monday to Friday)",
+                features: [
+                    "Information desk",
+                    "Document submission",
+                    "Fee payment",
+                    "Event hosting"
+                ]
+            },
+            "cafeteria": {
+                name: "Cafeteria",
+                icon: "fas fa-utensils",
+                description: "Located opposite the parking lot, the cafeteria serves a variety of snacks, meals, and beverages at affordable prices for students and staff.",
+                details: "Cafeteria services:\n• Breakfast, lunch and snacks\n• Vegetarian meals only\n• Vending machines for drinks\n• Outdoor seating available",
+                hours: "8:00 AM - 5:00 PM (Monday to Saturday)",
+                features: [
+                    "Daily specials",
+                    "Coffee/tea counter",
+                    "Microwave available",
+                    "Cashless payments"
+                ]
+            },
+            "engineering-block": {
+                name: "Engineering Block",
+                icon: "fas fa-flask",
+                description: "The primary academic building housing lecture halls, departmental offices, faculty rooms, and specialized laboratories for various engineering disciplines.",
+                details: "The Engineering Block contains:\n• 15 lecture halls\n• Department offices (CSE, IT, Mech, Civil, etc.)\n• Faculty rooms\n• Specialized laboratories\n• Department libraries",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "Elevator access",
+                    "Projector-equipped rooms",
+                    "Department HOD offices",
+                    "Student notice boards"
+                ]
+            },
+            "computer-lab": {
+                name: "Computer Lab",
+                icon: "fas fa-laptop-code",
+                description: "State-of-the-art computing facility on the 3rd floor of the Engineering Block with high-performance systems and specialized software.",
+                details: "Computer Lab features:\n• 60+ high-end workstations\n• Linux and Windows systems\n• Specialized engineering software\n• High-speed internet\n• Printer facilities",
+                hours: "9:00 AM - 5:00 PM (Monday to Saturday)",
+                features: [
+                    "24/7 access for projects",
+                    "Lab assistants available",
+                    "Group project spaces",
+                    "Software help desk"
+                ]
+            },
+            "auditorium": {
+                name: "Auditorium",
+                icon: "fas fa-theater-masks",
+                description: "The 500-seat auditorium hosts college events, guest lectures, seminars, and cultural programs with advanced audio-visual equipment.",
+                details: "Auditorium facilities:\n• 500 seating capacity\n• Stage with green rooms\n• Professional sound system\n• HD projection system\n• Air-conditioned",
+                hours: "By appointment only",
+                features: [
+                    "Event hosting",
+                    "Guest lectures",
+                    "Cultural programs",
+                    "Audio-visual support"
+                ]
+            },
+            "sports-complex": {
+                name: "Sports Complex",
+                icon: "fas fa-running",
+                description: "Comprehensive sports facilities including indoor and outdoor games, gymnasium, and athletic tracks for student fitness and competitions.",
+                details: "Sports facilities include:\n• Basketball court\n• Volleyball court\n• Badminton courts\n• Table tennis\n• Gymnasium\n• Athletic track",
+                hours: "7:00 AM - 7:00 PM (Monday to Saturday)",
+                features: [
+                    "Coaching available",
+                    "Sports equipment rental",
+                    "Inter-college competitions",
+                    "Changing rooms"
+                ]
+            },
+            "parking": {
+                name: "Parking Lot",
+                icon: "fas fa-parking",
+                description: "Secure parking area for students, staff, and visitors with designated zones for bicycles, motorcycles, and cars.",
+                details: "Parking facilities:\n• Covered and open parking\n• Separate bicycle stands\n• Faculty parking zone\n• Visitor parking\n• Security surveillance",
+                hours: "24/7 access",
+                features: [
+                    "Security patrols",
+                    "Well-lit at night",
+                    "EV charging points",
+                    "Disabled parking"
+                ]
+            },
+            "civil-dept": {
+                name: "Civil Engineering Department",
+                icon: "fas fa-hard-hat",
+                description: "The Civil Engineering Department focuses on structural design, construction technology, and environmental engineering with state-of-the-art labs.Its on 1st floor",
+                details: "Civil Department features:\n• Structural engineering lab\n• Surveying equipment\n• Concrete technology lab\n• Environmental engineering lab\n• Geotechnical engineering facilities",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "Material testing lab",
+                    "CAD/CAM facilities",
+                    "Hydraulics lab",
+                    "Department library"
+                ]
+            },
+            "mechanical-dept": {
+                name: "Mechanical Engineering Department",
+                icon: "fas fa-cogs",
+                description: "The Mechanical Department offers comprehensive facilities for machine design, thermal sciences, and manufacturing technology.Its on 5th floor",
+                details: "Mechanical Department includes:\n• Machine design lab\n• Thermodynamics lab\n• CAD/CAM center\n• Automobile engineering section\n• Workshop with CNC machines",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "3D printing facilities",
+                    "Fluid mechanics lab",
+                    "Heat transfer lab",
+                    "Industry collaboration projects"
+                ]
+            },
+            "electrical-dept": {
+                name: "Electrical Engineering Department",
+                icon: "fas fa-bolt",
+                description: "The Electrical Department specializes in power systems, control engineering, and electronics with modern laboratory setups. Its on 4th floor",
+                details: "Electrical Department facilities:\n• Power systems lab\n• Control systems lab\n• Electrical machines lab\n• High voltage lab\n• Renewable energy research center",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "Smart grid technology",
+                    "PLC and automation lab",
+                    "Power electronics lab",
+                    "Industry-standard simulation software"
+                ]
+            },
+            "computer-dept": {
+                name: "Computer Engineering Department",
+                icon: "fas fa-desktop",
+                description: "The Computer Department provides cutting-edge facilities for software development, networking, and computer systems research.Its on 3rd floor.",
+                details: "Computer Department includes:\n• Advanced computing labs\n• Networking lab\n• Cybersecurity center\n• AI research lab\n• Project development rooms",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "High-performance computing",
+                    "Cloud computing resources",
+                    "Mobile development lab",
+                    "Hackathon space"
+                ]
+            },
+            "aids-dept": {
+                name: "AI & Data Science Department",
+                icon: "fas fa-robot",
+                description: "The AI & DS Department focuses on artificial intelligence, machine learning, and big data analytics with specialized computing resources.Its on 4th floor ",
+                details: "AI & DS Department features:\n• GPU computing lab\n• Data visualization center\n• Machine learning lab\n• Big data processing cluster\n• Research incubation center",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "NVIDIA DGX systems",
+                    "Data science workbenches",
+                    "AI model training facilities",
+                    "Industry datasets access"
+                ]
+            },
+            "ar-dept": {
+                name: "Automation & Robotics Department",
+                icon: "fas fa-industry",
+                description: "The AR Department specializes in industrial automation, robotics, and mechatronics with advanced laboratory setups.Its on 5th floor",
+                details: "AR Department includes:\n• Industrial robotics lab\n• PLC automation center\n• IoT and smart systems lab\n• Mechatronics workshop\n• Drone technology research",
+                hours: "8:00 AM - 6:00 PM (Monday to Saturday)",
+                features: [
+                    "Industrial robot arms",
+                    "Automated production line",
+                    "Embedded systems lab",
+                    "Collaborative robotics"
+                ]
+            },
+            // New Management Department Data
+            "management-dept": {
+                name: "Management Department",
+                icon: "fas fa-chart-line",
+                description: "The Management Department offers business administration programs with focus on technology management, entrepreneurship, and corporate leadership.Its on 1st floor.",
+                details: "Management Department includes:\n• MBA program facilities\n• Case study rooms\n• Business simulation lab\n• Entrepreneurship cell\n• Corporate resource center",
+                hours: "9:00 AM - 5:00 PM (Monday to Saturday)",
+                features: [
+                    "Business analytics lab",
+                    "Stock market simulation",
+                    "Guest lecture series",
+                    "Incubation center",
+                    "Management library"
+                ]
+            }
+        };
+
+        // DOM elements
+        const searchInput = document.getElementById('search');
+        const locationCards = document.querySelectorAll('.location-card');
+        const modal = document.getElementById('locationModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalIcon = document.getElementById('modalIcon');
+        const modalDetails = document.getElementById('modalDetails');
+        const modalFeatures = document.getElementById('modalFeatures');
+        const closeModal = document.querySelector('.close-modal');
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            locationCards.forEach(card => {
+                const locationName = card.querySelector('.location-name').textContent.toLowerCase();
+                const locationDesc = card.querySelector('.location-desc').textContent.toLowerCase();
+                
+                if (locationName.includes(searchTerm) || locationDesc.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Card click event
+        locationCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const locationId = card.getAttribute('data-location');
+                const location = locations[locationId];
+                
+                // Set modal content
+                modalTitle.textContent = location.name;
+                modalIcon.className = `modal-icon ${location.icon}`;
+                
+                // Format details with line breaks
+                modalDetails.innerHTML = `
+                    <p><strong>${location.description}</strong></p>
+                    <p>${location.details.replace(/\n/g, '<br>')}</p>
+                    <p><i class="far fa-clock"></i> <strong>Hours:</strong> ${location.hours}</p>
+                `;
+                
+                
+                // Add features
+                modalFeatures.innerHTML = '<h4>Features:</h4>';
+                location.features.forEach(feature => {
+                    modalFeatures.innerHTML += `
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span>${feature}</span>
+                        </div>
+                    `;
+                });
+                
+                // Show modal
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
